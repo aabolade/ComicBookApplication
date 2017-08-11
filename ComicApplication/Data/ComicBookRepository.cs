@@ -23,7 +23,8 @@ namespace ComicApplication.Data
                     new Artist() { Name = "Edgar Delgado", Role = "Colors" },
                     new Artist() { Name = "Chris Eliopoulos", Role = "Letters" },
                 },
-                Favourite = false
+                Favourite = false,
+                Id = 1
             },
             new ComicBook()
             {
@@ -38,7 +39,8 @@ namespace ComicApplication.Data
                     new Artist() { Name = "Muntsa Vicente", Role = "Colors" },
                     new Artist() { Name = "Joe Caramagna", Role = "Letters" }
                 },
-                Favourite = false
+                Favourite = false,
+                Id = 2
             },
             new ComicBook()
             {
@@ -52,7 +54,8 @@ namespace ComicApplication.Data
                     new Artist() { Name = "Jeff Smith", Role = "Inks" },
                     new Artist() { Name = "Jeff Smith", Role = "Letters" }
                 },
-                Favourite = false
+                Favourite = false,
+                Id = 3
             }
         };
 
@@ -61,7 +64,7 @@ namespace ComicApplication.Data
             ComicBook comicBookToReturn = null;
             foreach (var comicBook in  _comicBooks)
             {
-                if (id == comicBook.id)
+                if (id == comicBook.Id)
                 {
                     comicBookToReturn = comicBook;
                     break;
